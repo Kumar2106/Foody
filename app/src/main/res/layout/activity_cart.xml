@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.cart">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/cart_toolbar"
+        android:background="@color/welcomepagebackground"
+        app:titleTextColor="#fff"
+        app:title="@string/my_cart"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:textColor="#000"
+        android:paddingTop="10dp"
+        android:id="@+id/ordering_from"
+        android:layout_below="@id/cart_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        android:text="@string/ordering_from"
+      />
+    <TextView
+        android:id="@+id/line"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ordering_from"
+        android:background="@color/welcomepagebackground"
+        android:gravity="center_horizontal" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:layout_above="@id/btn_place_order"/>
+    <Button
+        android:text="Place Order()"
+        android:textColor="#fff"
+        android:id="@+id/btn_place_order"
+        android:layout_alignParentBottom="true"
+        android:background="@color/welcomepagebackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

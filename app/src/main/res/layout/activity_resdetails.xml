@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.resdetails">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/resmenutoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/welcomepagebackground"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="#fff" />
+
+        <TextView
+            android:id="@+id/resmenutitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resmenutoolbar"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:text="@string/menudetails"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/line"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/resmenutitle"
+            android:background="@color/colorhint"
+            android:gravity="center_horizontal" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_above="@id/btncart"
+            android:id="@+id/scrool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/resmenurecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:visibility="visible"
+        android:id="@+id/btncart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/welcomepagebackground"
+        android:text="Proceed to Cart"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

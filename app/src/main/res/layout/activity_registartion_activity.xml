@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/welcomepagebackground"
+    tools:context=".activity.Registartion_activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/registrationtoolbar"
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/register_yourself"
+        app:titleTextColor="#fff"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <EditText
+
+        android:id="@+id/txtregistername"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginRight="15dp"
+        android:background="#fff"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="5dp"
+        android:hint="Name(Min. 3 characters)"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:textColorHint="#A4B0BD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/txtregisteremail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="#fff"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="5dp"
+        android:hint="@string/email_address"
+        android:paddingLeft="5dp"
+        android:textColorHint="#A4B0BD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtregistername" />
+
+    <EditText
+
+        android:id="@+id/txtregisterphone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="#fff"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="5dp"
+        android:hint="@string/mobile_number_10_digits"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:paddingLeft="5dp"
+        android:textColorHint="#A4B0BD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtregisteremail" />
+
+    <EditText
+        android:inputType="text"
+        android:id="@+id/txtregiterdelivery"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="#fff"
+        android:drawableLeft="@drawable/delivery_location"
+        android:drawablePadding="5dp"
+        android:hint="@string/delivery_address"
+        android:paddingLeft="5dp"
+        android:textColorHint="@color/colorhint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtregisterphone" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/txtregisterpasword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="#fff"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="5dp"
+        android:hint="Password(Min 4 characters)"
+        android:paddingLeft="5dp"
+        android:textColorHint="@color/colorhint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtregiterdelivery" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/txtregisterconfirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="#fff"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="5dp"
+        android:hint="@string/confirm_password"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtregisterpasword" />
+
+    <Button
+        android:id="@+id/buttonregister"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtregisterconfirmpassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
