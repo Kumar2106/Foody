@@ -14,4 +14,4 @@ This app features the following screen.
 5. OTP Activity.
 
 Screenshot of my App.
-![](https://github.com/Kumar2106/Foody/blob/master/Copy%20of%20Copy%20of%20Screenshot_2020-03-23-14-57-42-758_com.example.foody.jpg)
+![](https://github.com/Kumar2106/Foody/blob/master/Welcome%20screen.png)
