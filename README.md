@@ -14,3 +14,4 @@ This app features the following screen.
 5. OTP Activity.
 
 Screenshot of my App.
+![](Copy of Copy of Screenshot_2020-03-23-14-57-42-758_com.example.foody.jpg)
